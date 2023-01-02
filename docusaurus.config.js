@@ -9,7 +9,7 @@ const config = {
   title: 'Gits CLI',
   tagline: 'Gits Flutter Staterkit Command Line Interface',
   url: 'https://gitsindonesia.github.io/',
-  baseUrl: '/gits-cli/',
+  baseUrl: '/gits_cli_documentation/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

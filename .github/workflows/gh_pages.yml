@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: GIT_USER=${GIT_USER} npm run deploy
+      - run: USE_SSH=true npm run deploy

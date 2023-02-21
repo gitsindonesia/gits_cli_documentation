@@ -8,10 +8,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
-      - run: USE_SSH=true npm run deploy
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        run: |
+          cd build
+          git init
+          git config user.name "dena"
+          git config user.email "dena@gits.id"
+          git remote add secure-origin https://username:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git checkout -b gh-pages
+          git add .
+          git commit -m "Deployed Github Pages"
+          git push --force secure-origin gh-pages

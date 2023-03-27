@@ -56,6 +56,16 @@ If you want install spesific version gits cli you need to follow this step:
 
 :::
 
+### Additional Tools Installations
+
+1. Install `lcov` for requirement command `gits coverage`.
+
+   Install lcov with follow [this installation](https://github.com/linux-test-project/lcov)
+
+2. Install `gherkin` for requirement command `gits cucumber`.
+
+   Install gherkin executable and make sure to export to your PATH from this [Gherkin Executable](https://github.com/gitsindonesia/gits_cli/releases/tag/cucumber)
+
 ## Usage
 
 To use the Gits CLI, you must run the `gits` command from the terminal on your project directory.

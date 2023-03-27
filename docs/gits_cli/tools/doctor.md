@@ -10,7 +10,7 @@ This command is used to show information about the installed tooling.
 gits doctor
 ```
 
-Doctor check `flutter doctor` and `gherkin` executable for requirment integration test
+Doctor check `flutter doctor`, `lcov` and `gherkin` installation.
 
 ```bash title="Output"
 [✓] Flutter installed
@@ -26,4 +26,5 @@ Doctor summary (to see all details, run flutter doctor -v):
 
 • No issues found!
 [✓] Gherkin installed
+[✓] lcov installed
 ```

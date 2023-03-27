@@ -45,7 +45,7 @@ If this directory is missing from your PATH, locate the file for your platform a
 | macOS or Linux | HOME/.pub-cache/bin          |
 | Windows*       | %LOCALAPPDATA%\Pub\Cache\bin |
 
-:::caution
+:::info
 
 If you want install spesific version gits cli you need to follow this step:
 
@@ -62,6 +62,6 @@ To use the Gits CLI, you must run the `gits` command from the terminal on your p
 
 :::caution
 
-This CLI can only be used on Gits Flutter Starter Kit, please clone it first and configure it based on the documentation on the following link **[Gits Flutter Starter Kit](https://git.gits.id/RnD/fluttergits)**
+This CLI can only be used on Gits Flutter Starter Kit, please clone it first and configure it based on the documentation on the following link **[Gits Flutter Starter Kit](../starter_kit/started)**
 
 :::

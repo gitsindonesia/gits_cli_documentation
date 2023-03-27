@@ -34,7 +34,7 @@ One of the mandatory requirements to be installed on your machine is to run a Fl
 
 #### Gits Base
 
-GitsBase is base for UI project include state management with cubit & hydrated. Learn more about Gits Base [here](https://pub.dev/packages/gits_extension)
+GitsBase is base for UI project include state management with cubit & hydrated. Learn more about Gits Base [here](https://pub.dev/packages/gits_base)
 
 #### Gits HTTP
 

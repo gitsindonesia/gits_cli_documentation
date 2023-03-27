@@ -4,6 +4,18 @@ sidebar_position: 2
 
 # Getting Started
 
+## Requirement
+
+- Dart SDK 2.19 - latest
+- Flutter: 3.7.0 - latest
+
+:::note
+
+- Dart SDK Installation **[Dart SDK](https://dart.dev/get-dart)**
+- Flutter SDK Installation **[Flutter SDK](https://docs.flutter.dev/development/tools/sdk/releases?tab=macos)**
+
+:::
+
 ## Installation
 
 1. Install [Gits CLI](../gits_cli/started)

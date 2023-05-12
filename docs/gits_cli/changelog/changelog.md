@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.1.0
+
+- feat(unused-l10n): add new command check unused key on .arb
+- feat(local2dart): add new command generate local2dart yaml to sqflite
+- fix: remove call format before build and run
+- fix(api_command): separator in locator in windows
+- feat(remove-page): add new command for remove page
+- feat(remove-feature): add new command for remove feature
+- fix: replace path gits.yaml with separator each platform
+
 ## 3.0.1
 
 - fix(feature_commnad): add default uses-material-design: true in create pubspec.yaml

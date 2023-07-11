@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Json to Dart
+# Json2Dart
 
 This command is used to generate the API based on the configuration json file in the `json2dart/json2dart.yaml` file
 

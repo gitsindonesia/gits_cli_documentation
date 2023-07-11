@@ -1,5 +1,25 @@
 # Changelog
 
+## 3.3.1
+
+- fix: add flag generate for dart3 in core and feature
+
+## 3.3.0
+
+- build: bump dependency version
+- chore: support dart >=2.19.0 <4.0.0 and flutter 3.7.0
+- fix(api_command): cast() to map() regenerate to map<String, String>
+- fix: new .gitignore and minimal version dart and flutter
+- fix(local2dart): dirname for database path
+
+## 3.2.0
+
+- fix(feature): remove unused directory after create feature
+- fix(login2dart): major issue local2dart
+- fix(local2dart): seed change keys to column and json serialize support with join
+- feat(local2dart): add generate custom query
+- feat(local2dart): add generate view
+
 ## 3.1.0
 
 - feat(unused-l10n): add new command check unused key on .arb

@@ -1,0 +1,8 @@
+{
+  "label": "Prebuild",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Semua command yang berhubungan dengan pre build."
+  }
+}

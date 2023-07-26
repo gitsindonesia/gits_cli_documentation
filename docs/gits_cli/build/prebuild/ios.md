@@ -61,3 +61,36 @@ There are 3 files that will be generated from this ios prebuild:
 | `-f dev` | `--flavor dev` | Pre Build project on dev environment (Default) |
 | `-f stag` | `--flavor stag` | Pre Build project on staging environment|
 | `-f prod` | `--flavor prod` | Pre Build project on production environment |
+
+## Miration
+
+To migrate from previous version just add the file `ios/deployment/appstore_deployment.json` which was described earlier then in `.gitlab-ci.yml`
+
+```diff title=".gitlab-ci.yml"
+.build-ios:
+  stage: build_ios
+  resource_group: build_and_deploy_ios
+  allow_failure: false
+  script:
+    # Get version name & build number from tag
+    - IFS='-' # Read the split words into an array based on dash delimiter.
+    - read -a strarr <<< "$CI_COMMIT_TAG"
+    - VERSION_NAME=${strarr[1]}
+    - BUILD_NUMBER=${strarr[2]}
+    # Setup key ios
+-   - echo "$APP_STORE_JSON" > "$PATH_APP_STORE_JSON"
++   - gits_cli prebuild ios -f ${CI_ENVIRONMENT_NAME}
+    # Change working directory to ios
+    - cd ios
+    # Set up code signing settings on Xcode project.
+    - chmod +x deployment/provisioning.sh
+    - ./deployment/provisioning.sh
+    - pod install --repo-update
+    # Change working directory to root
+    - cd ..
+    # Build ipa
+    - gits_cli build ipa -f ${CI_ENVIRONMENT_NAME} --build-number=$BUILD_NUMBER --build-name=$VERSION_NAME --export-options-plist="$PATH_EXPORT_OPTIONS_PLISTS"
+  # artifacts: # If you want to generate artifacts, uncomment this script.
+  #   paths:
+  #   - $PATH_IPA
+```

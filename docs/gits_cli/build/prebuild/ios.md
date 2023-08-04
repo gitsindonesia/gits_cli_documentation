@@ -62,7 +62,7 @@ There are 3 files that will be generated from this ios prebuild:
 | `-f stag` | `--flavor stag` | Pre Build project on staging environment|
 | `-f prod` | `--flavor prod` | Pre Build project on production environment |
 
-## Miration
+## Migration
 
 To migrate from previous version just add the file `ios/deployment/appstore_deployment.json` which was described earlier then in `.gitlab-ci.yml`
 
